@@ -12,6 +12,7 @@ ASSAYS = [
     'rna',
     'vdj',
     'tag',
+    'dynaseq',
 ]
 
 
