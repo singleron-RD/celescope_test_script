@@ -1,0 +1,8 @@
+*/test1/
+*.txt
+*.lprof
+*.prof
+data_give/
+log/
+shell/
+nohup.out
