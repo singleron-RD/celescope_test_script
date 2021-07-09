@@ -6,6 +6,7 @@ data_give/
 log/
 shell/
 nohup.out
+sjm.sh
 
 
 # vscode

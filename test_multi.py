@@ -23,6 +23,12 @@ def run_single(assay):
     os.chdir(assay)
     print("*" * 20 + "running " + assay + "*" * 20)
     subprocess.check_call('sh run_shell.sh', shell=True)
+
+    with open('sjm.sh', 'w') as sjm_h:
+        with open('run_shell.sh', 'r') as shell_h:
+            for line in shell_h:
+                sjm_h.write(line.replace("mod shell", "mod sjm"))
+
     subprocess.check_call('sh sjm.sh', shell=True)
     try:
         subprocess.check_call('sh ./shell/test1.sh', shell=True)
