@@ -1,1 +1,1 @@
-snp	../celescope_test_data/fastqs	snp	../celescope_test_data/snp_match_dir
+snp	../../celescope_test_data/snp/fastqs	snp	../../celescope_test_data/snp/snp_match_dir
