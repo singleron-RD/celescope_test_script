@@ -11,6 +11,7 @@ git clone https://github.com/singleron-RD/celescope_test_script.git
 2. Modify arguments
 - `celescope_test_script/rna/run_shell.sh` Change `--genomeDir` to the human genomeDir path.
 - `celescope_test_script/dynaseq/run_shell.sh` Change `--genomeDir` to the mouse genomeDir path.
+- `celescope_test_script/snp/run_shell.sh` Change `--genomeDir` to the human genomeDir path.
 
 3. Run `pytest`
 - Install pytest
