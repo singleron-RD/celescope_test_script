@@ -13,6 +13,7 @@ ASSAYS = [
     'vdj',
     'tag',
     'dynaseq',
+    'snp',
 ]
 
 
