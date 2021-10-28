@@ -4,4 +4,4 @@ multi_snp \
  --annovar_config ./annovar.config \
  --mod shell\
  --not_consensus\
- --panel lung_1
+ --gene_list ../../celescope_test_data/snp/gene_list.tsv
