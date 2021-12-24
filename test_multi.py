@@ -44,15 +44,19 @@ def run_single(assay):
 def test_mutiple(assays):
     """
     Run all
-    >>> pytest -s celescope/tests/test_multi.py --test_dir {some_dir}
+    >>> pytest -s celescope/tests/test_multi.py 
     Run some tests
-    >>> pytest -s celescope/tests/test_multi.py --test_dir {some_dir} --assays tag,fusion
+    >>> pytest -s celescope/tests/test_multi.py 
     """
 
     if not assays:
         assays = ASSAYS
     else:
         assays = assays.split(',')
+
+    # remove test1
+    for assay in assays:
+        os.system(f'rm -r {assay}/test1/')
     print("assays to run: ", assays)
     thread = len(assays)
     executor = futures.ProcessPoolExecutor(max_workers=thread)
