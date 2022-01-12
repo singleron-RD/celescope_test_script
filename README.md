@@ -1,6 +1,6 @@
 # CeleScope tests
 
-1. Get test data and scripts.
+## 1. Get test data and scripts.
 ```
 mkdir test_dir
 cd test_dir
@@ -8,7 +8,7 @@ git clone https://github.com/singleron-RD/celescope_test_data.git
 git clone https://github.com/singleron-RD/celescope_test_script.git
 ```
 
-2. Modify arguments
+## 2. Modify arguments
 - rna
 
 `celescope_test_script/rna/run_shell.sh` Change `--genomeDir` to the human genomeDir path.
@@ -25,11 +25,10 @@ git clone https://github.com/singleron-RD/celescope_test_script.git
 
 celescope_test_data contains the EBV fasta. You can generate a EBV genomeDir by using `mkref.sh` under `celescope_test_data/capture_virus/EBV_genome` .
 
-`celescope_test_script/snp/run_shell.sh` Change `--virus_genomeDir` to the EBV genomeDir path.
+`celescope_test_script/capture_virus/run_shell.sh` Change `--virus_genomeDir` to the EBV genomeDir path.
 
 
-
-3. Run `pytest`
+## 3. Run `pytest`
 - Install pytest
 ```
 pip install pytest
