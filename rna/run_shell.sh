@@ -1,6 +1,6 @@
 multi_rna\
  --mapfile ./rna.mapfile\
- --genomeDir /Public/Database/genome/homo_sapiens/ensembl_92/\
+ --genomeDir /SGRNJ03/randd/public/genome/rna/hs_ensembl_99\
  --thread 4\
  --mod shell
  #--steps_run analysis
