@@ -1,5 +1,7 @@
 # CeleScope tests
 
+Please note that these data are for testing purposes only. Some of the data are artificially generated.
+
 ## 1. Get test data and scripts.
 ```
 mkdir test_dir
