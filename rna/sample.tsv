@@ -1,0 +1,2 @@
+sample_name	fastq_prefix	fastq_dir	expected_cell_num	force_cell_num
+test1	rna	../../celescope_test_data/rna/fastqs	1000	1000

@@ -1,5 +1,5 @@
 multi_vdj\
- --mapfile ./tcr.mapfile\
+ --sample_tsv sample.tsv\
  --type TCR\
  --mod shell
 
