@@ -1,0 +1,2 @@
+sample_name	fastq_prefix	fastq_dir	match_dir
+test1	tag	../../celescope_test_data/tag/fastqs/	../../celescope_test_data/tag/fake_match_dir
