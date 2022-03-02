@@ -9,6 +9,13 @@ cd test_dir
 git clone https://github.com/singleron-RD/celescope_test_data.git
 git clone https://github.com/singleron-RD/celescope_test_script.git
 ```
+If github is blocked, an alternate repo(gitee) is available.
+```
+mkdir test_dir
+cd test_dir
+git clone https://gitee.com/singleron-rd/celescope_test_script.git
+git clone https://gitee.com/singleron-RD/celescope_test_script.git
+```
 
 ## 2. Modify arguments
 - rna
