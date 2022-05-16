@@ -1,3 +1,4 @@
+*/JC_16V2_1_3Nlib/
 */test1/
 *.txt
 *.lprof
@@ -12,6 +13,7 @@ SN343-1/
 merge.xls
 sjm/
 cache/
+snp/rna.sh
 
 
 # vscode
