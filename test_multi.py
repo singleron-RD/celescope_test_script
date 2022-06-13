@@ -15,6 +15,7 @@ ASSAYS = [
     'dynaseq',
     'snp',
     'capture_virus',
+    'fusion',
 ]
 
 
