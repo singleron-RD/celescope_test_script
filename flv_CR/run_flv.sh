@@ -1,6 +1,5 @@
-multi_fl_vdj_CR \
-	--mapfile  ./test.mapfile \
-	--chemistry flv \
+multi_flv_CR \
+	--mapfile  ./test.mapfile\
 	--mem 10 \
 	--species hs \
 	--thread 8 \
