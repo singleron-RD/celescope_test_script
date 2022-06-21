@@ -15,6 +15,9 @@ ASSAYS = [
     'dynaseq',
     'snp',
     'capture_virus',
+    'fusion',
+    'flv_CR',
+    'flv_trust4',
 ]
 
 
