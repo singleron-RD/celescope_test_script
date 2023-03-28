@@ -22,6 +22,7 @@ ASSAYS = [
     'flv_CR',
     'flv_trust4',
     'sweetseq',
+    'citeseq',
 ]
 
 
