@@ -7,24 +7,10 @@ import subprocess
 from concurrent import futures
 
 import celescope.tools.utils as utils
+from celescope.__init__ import RELEASED_ASSAYS
 
 ROOT_PATH = os.path.abspath('.')
 LOG_DIR = os.path.join(ROOT_PATH, 'log')
-
-ASSAYS = [
-    'rna',
-    'vdj',
-    'tag',
-    'dynaseq',
-    'snp',
-    'capture_virus',
-    'fusion',
-    'flv_CR',
-    'flv_trust4',
-    'sweetseq',
-    'citeseq',
-]
-
 
 def run_single(assay):
     """
@@ -34,17 +20,19 @@ def run_single(assay):
     log_file = os.path.join(LOG_DIR, '{}.log'.format(assay))
 
     os.chdir(assay)
-    print("*" * 20 + "running " + assay + "*" * 20)
-    subprocess.check_call(f'sh run_shell.sh 2>&1 > {log_file}', shell=True)
+    print(f"Running {assay}... log file:{log_file}")
+    # https://stackoverflow.com/questions/818255/what-does-21-mean
+    # cmd 2>&1 >>file does not redirect stderr to the file, but cmd >> file 2>&1 does
+    subprocess.check_call(f'sh run_shell.sh > {log_file} 2>&1 ', shell=True)
 
     with open('sjm.sh', 'w') as sjm_h:
         with open('run_shell.sh', 'r') as shell_h:
             for line in shell_h:
                 sjm_h.write(line.replace("mod shell", "mod sjm"))
 
-    subprocess.check_call(f'sh sjm.sh 2>&1 > {log_file}', shell=True)
+    subprocess.check_call(f'sh sjm.sh > {log_file} 2>&1', shell=True)
     try:
-        subprocess.check_call(f'sh ./shell/test1.sh 2>&1 > {log_file}', shell=True)
+        subprocess.check_call(f'sh ./shell/test1.sh > {log_file} 2>&1 ', shell=True)
     except subprocess.CalledProcessError:
         return f"{assay} failed"
     print("*" * 20 + "success " + assay + "*" * 20)
@@ -63,7 +51,7 @@ def test_mutiple(assays):
     print(f'log files are in: {LOG_DIR}')
 
     if not assays:
-        assays = ASSAYS
+        assays = RELEASED_ASSAYS
     else:
         assays = assays.split(',')
 
