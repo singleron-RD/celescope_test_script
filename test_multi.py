@@ -35,7 +35,6 @@ def run_single(assay):
         subprocess.check_call(f'sh ./shell/test1.sh > {log_file} 2>&1 ', shell=True)
     except subprocess.CalledProcessError:
         return f"{assay} failed"
-    print("*" * 20 + "success " + assay + "*" * 20)
     return f"{assay} success."
 
 
