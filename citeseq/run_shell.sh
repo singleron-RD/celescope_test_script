@@ -1,7 +1,6 @@
 multi_citeseq \
  --mapfile ./test.mapfile\
- --linker_fasta ./linker.fasta\
- --barcode_fasta ./cite_barcode_fasta\
+ --linker linker.fasta\
+ --barcode_fasta ./TotalSeqA_mouse_barcode.fasta\
  --fq_pattern L21C15\
  --mod shell\
- --steps_run all
