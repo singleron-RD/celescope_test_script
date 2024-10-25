@@ -1,6 +1,7 @@
 # CeleScope tests
 
-Please note that these data are for testing purposes only. Some of the data are artificially generated.
+Please note that these test data are only for testing whether the pipeline can run, and the data does not represent the real data quality. 
+For testing purposes and the capacity limit of the GitHub repository, each test data contains only a few reads and may be mixed data from multiple libraries, or simulated data.
 
 ## 1. Get test data and scripts.
 ```
