@@ -1,9 +1,5 @@
 multi_bulk_vdj \
 	--mapfile mapfile \
-	--chemistry customized \
-	--pattern L18C6U16 \
-	--whitelist bulk_vdj_whitelist \
-	--linker bulk_vdj_linker \
 	--type TCR \
 	--ref_path /SGRNJ06/randd/USER/cjj/igblast/igblast_ref/hs_TR/ \
 	--species human \
