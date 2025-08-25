@@ -20,23 +20,15 @@ git clone https://gitee.com/singleron-rd/celescope_test_script.git
 ```
 
 ## 2. Modify arguments
-- rna
+- `rna` Change `--genomeDir` to the human genomeDir path.
 
-`celescope_test_script/rna/run_shell.sh` Change `--genomeDir` to the human genomeDir path.
+- `dynaseq` Change `--genomeDir` to the mouse genomeDir path.
 
-- dynaseq
+- `snp` Change `--genomeDir` to the human genomeDir path.
 
-`celescope_test_script/dynaseq/run_shell.sh` Change `--genomeDir` to the mouse genomeDir path.
+- `capture_virus` celescope_test_data contains the EBV fasta. You can generate a EBV genomeDir by using `mkref.sh` under `celescope_test_data/capture_virus/EBV_genome`. Then change `--virus_genomeDir` to the EBV genomeDir path.
 
-- snp
-
-`celescope_test_script/snp/run_shell.sh` Change `--genomeDir` to the human genomeDir path.
-
-- capture_virus
-
-celescope_test_data contains the EBV fasta. You can generate a EBV genomeDir by using `mkref.sh` under `celescope_test_data/capture_virus/EBV_genome` .
-
-`celescope_test_script/capture_virus/run_shell.sh` Change `--virus_genomeDir` to the EBV genomeDir path.
+- `bulk_vdj` Change --ref_path to the igblast ref path.
 
 
 ## 3. Run `pytest`

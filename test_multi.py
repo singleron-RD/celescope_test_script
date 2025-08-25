@@ -51,7 +51,6 @@ def test_mutiple(assays):
 
     if not assays:
         assays = RELEASED_ASSAYS
-        assays.remove('bulk_rna') 
     else:
         assays = assays.split(',')
 
