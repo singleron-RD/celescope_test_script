@@ -53,6 +53,8 @@ def test_mutiple(assays):
         assays = RELEASED_ASSAYS
     else:
         assays = assays.split(',')
+    files = os.listdir(".")
+    assays = list(set(assays).intersection(set(files)))
 
     # remove test1
     for assay in assays:
