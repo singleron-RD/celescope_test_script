@@ -32,7 +32,7 @@ def run_single(assay):
 
     subprocess.check_call(f'sh sjm.sh > {log_file} 2>&1', shell=True)
     try:
-        subprocess.check_call(f'sh ./shell/test1.sh > {log_file} 2>&1 ', shell=True)
+        subprocess.check_call(f'bash ./shell/test1.sh > {log_file} 2>&1 ', shell=True)
     except subprocess.CalledProcessError:
         return f"{assay} failed"
     return f"{assay} success."

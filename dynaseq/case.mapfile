@@ -1,1 +1,1 @@
-test ../../celescope_test_data/dynaseq/fastqs	test1	None	../../celescope_test_data/dynaseq/control.PosTag.csv
+test	../../celescope_test_data/dynaseq/fastqs	test1	None	../../celescope_test_data/dynaseq/control.PosTag.csv
